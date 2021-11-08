@@ -2,6 +2,8 @@
 import functions from './scripts/functions';
 import './styles.scss';
 import $ from 'jquery';
+import {firstFunction} from '../array-utils'
+import {secondFunction} from '../array-utils'
 
 
 // console.log(functions);
@@ -29,3 +31,10 @@ console.log(functions.multTwo(20));
 console.log(functions.multFive(20));
 
 $('body').css('background', 'green');
+
+const arr = [6, 1, 3, 9, 15];
+// const arrOne = firstFunction(arr);
+// const second = secondFunction(arr);
+console.log("Начальный массив -  " + arr);
+console.log("Массив упорядочен по возростанию -  " + firstFunction(arr));
+console.log("Массив упорядочен по убиванию -  " + secondFunction(arr));
